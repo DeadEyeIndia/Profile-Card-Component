@@ -1,0 +1,133 @@
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: right 52vw bottom 36vh, 49vw 51vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &__card {
+        width: 21.875rem;
+        height: 23.375rem;
+        border-radius: 1rem;
+        background-color: white;  
+
+        @include breakpoint-down(small) {
+            width: 20.375rem;
+        }
+    }
+
+    &__upper {
+        height: 8.75rem;
+        border-radius: 1rem 1rem 0 0;
+        img {
+
+            background-image: url();
+            background-size: cover;
+            border-radius: 1rem 1rem 0 0;
+            position: absolute;
+        }
+    }
+
+    
+
+    &__profile {
+        position: relative;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        top: -3.4rem;
+        height: 10.4375rem;
+
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+        img {
+            
+            background-image: url();
+            background-size: cover;
+            border-radius: 100%;
+            border: 7px solid white;
+            
+        }
+    }
+
+    h2 {
+        display: flex;
+        color: $veryDarkDesaturatedBlue;
+        font-size: 0.8125rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.0625rem;
+
+    }
+    h2, span {
+        gap: 10px;
+    }
+    span {
+        color: $darkGrayishBlue;
+        font-weight: 400;
+        
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $darkGray;
+        font-size: 0.7125rem;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 1.75rem;
+    }
+
+    hr {
+        margin: 0;
+        color: $darkGray;
+    }
+
+    &__lower {
+        position: relative;
+        height: 5.5rem;
+        top: -1rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        
+        
+    }
+
+    &__items {
+        
+        h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.3437rem;
+            font-size: 0.8125rem;
+        }
+
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.4375rem;
+            letter-spacing: 0.15rem;
+            color: $darkGray;
+        }
+    }
+    
+}
+
